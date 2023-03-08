@@ -18,8 +18,8 @@
 
 		function initClient() {
 			gapi.client.init({
-				apiKey: '${{ env.API_KEY }}',
-				clientId: '${{ env.CLIENT_ID }}',
+				apiKey: '${{ vars.API_KEY }}',
+				clientId: '${{ vars.CLIENT_ID }}',
 				scope: 'https://www.googleapis.com/auth/youtube.force-ssl',
 				discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest'],
 			}).then(function() {
